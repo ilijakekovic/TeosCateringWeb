@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Menu — Teo’s Catering</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><div class="brand__logo">Τ</div><div class="brand__name">Teo’s Catering</div></a>
+    <button class="nav__toggle" aria-label="Open menu">☰</button>
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="menu.html">Menu</a>
+      <a class="nav__link" href="catering.html">Catering</a>
+    </nav>
+  </div>
+</header>
+
+<main class="section">
+  <div class="container">
+    <h1 style="margin:0 0 8px">Menu</h1>
+    <p class="helper">Customize on pickup with add-ons and sauces. Prices shown are examples.</p>
+
+    <div class="menu__tabs" role="tablist">
+      <button class="tab is-active" data-tab="all" role="tab">All</button>
+      <button class="tab" data-tab="gyros" role="tab">Gyros</button>
+      <button class="tab" data-tab="wraps" role="tab">Wraps</button>
+      <button class="tab" data-tab="salads" role="tab">Salads</button>
+      <button class="tab" data-tab="platters" role="tab">Platters</button>
+      <button class="tab" data-tab="sides" role="tab">Sides</button>
+      <button class="tab" data-tab="desserts" role="tab">Desserts</button>
+      <button class="tab" data-tab="drinks" role="tab">Drinks</button>
+    </div>
+
+    <div class="menu__list">
+      <!-- Gyros -->
+      <article class="menu-item" data-item="gyros">
+        <img src="https://images.unsplash.com/photo-1604909052743-88b9b8a9b735?q=80&w=1000&auto=format&fit=crop" alt="Signature Gyro">
+        <div>
+          <h4>Signature Gyro</h4>
+          <p>Roasted lamb & beef, tomatoes, onions, tzatziki in warm pita.</p>
+        </div>
+        <div class="price">$10.99</div>
+      </article>
+
+      <article class="menu-item" data-item="gyros">
+        <img src="https://images.unsplash.com/photo-1511690656952-34342bb7c2f2?q=80&w=1000&auto=format&fit=crop" alt="Chicken Gyro">
+        <div>
+          <h4>Chicken Gyro</h4>
+          <p>Marinated grilled chicken, tomatoes, onions, tzatziki.</p>
+        </div>
+        <div class="price">$9.99</div>
+      </article>
+
+      <!-- Wraps -->
+      <article class="menu-item" data-item="wraps">
+        <img src="https://images.unsplash.com/photo-1625944528073-6a3d25bf3a0f?q=80&w=1000&auto=format&fit=crop" alt="Falafel Wrap">
+        <div>
+          <h4>Falafel Wrap</h4>
+          <p>Crispy falafel, lettuce, tomato, cucumber, tahini.</p>
+        </div>
+        <div class="price">$8.99</div>
+      </article>
+
+      <!-- Salads -->
+      <article class="menu-item" data-item="salads">
+        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=1000&auto=format&fit=crop" alt="Greek Salad">
+        <div>
+          <h4>Greek Salad</h4>
+          <p>Cucumbers, tomatoes, peppers, olives, feta, oregano dressing.</p>
+        </div>
+        <div class="price">$6.99</div>
+      </article>
+
+      <!-- Platters -->
+      <article class="menu-item" data-item="platters">
+        <img src="https://images.unsplash.com/photo-1606491956689-2b6a43f7a8d8?q=80&w=1000&auto=format&fit=crop" alt="Lamb & Beef Platter">
+        <div>
+          <h4>Lamb & Beef Platter</h4>
+          <p>Gyro meats with rice pilaf, salad, pita, and tzatziki.</p>
+        </div>
+        <div class="price">$14.49</div>
+      </article>
+
+      <!-- Sides -->
+      <article class="menu-item" data-item="sides">
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=1000&auto=format&fit=crop" alt="Spanakopita">
+        <div>
+          <h4>Spanakopita</h4>
+          <p>Flaky phyllo filled with spinach, herbs & feta.</p>
+        </div>
+        <div class="price">$5.99</div>
+      </article>
+
+      <!-- Desserts -->
+      <article class="menu-item" data-item="desserts">
+        <img src="https://images.unsplash.com/photo-1625944307317-60f8b9b6b0d2?q=80&w=1000&auto=format&fit=crop" alt="Baklava">
+        <div>
+          <h4>Baklava</h4>
+          <p>Honey-soaked phyllo with walnuts & cinnamon.</p>
+        </div>
+        <div class="price">$4.49</div>
+      </article>
+
+      <!-- Drinks -->
+      <article class="menu-item" data-item="drinks">
+        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1000&auto=format&fit=crop" alt="Iced Tea">
+        <div>
+          <h4>Mint Iced Tea</h4>
+          <p>Refreshing brewed tea with fresh mint.</p>
+        </div>
+        <div class="price">$2.49</div>
+      </article>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="year"></span> Teo’s Catering</div>
+</footer>
+
+<script src="app.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

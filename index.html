@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Teo’s Catering — Mediterranean Magic</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html" aria-label="Teo's Catering home">
+      <div class="brand__logo">Τ</div>
+      <div class="brand__name">Teo’s Catering</div>
+    </a>
+    <button class="nav__toggle" aria-label="Open menu">☰</button>
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="menu.html">Menu</a>
+      <a class="nav__link" href="catering.html">Catering</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container hero">
+      <h1>Mediterranean Magic for Every Occasion</h1>
+      <p>Fresh, vibrant flavors inspired by the sea, sunshine, and family tables. From curbside service to elegant events — we’ve got you covered.</p>
+      <div style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap">
+        <a class="btn primary" href="menu.html">Browse Menu</a>
+        <a class="btn ghost" href="catering.html">Request Catering Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 style="margin:0 0 14px">Favorites</h2>
+      <div class="grid grid-3">
+        <article class="card">
+          <img class="card__img" src="https://images.unsplash.com/photo-1604909052743-88b9b8a9b735?q=80&w=1600&auto=format&fit=crop" alt="Gyro in warm pita" />
+          <div class="card__body">
+            <h3 class="card__title">Signature Gyro</h3>
+            <p class="card__muted">Tender roasted lamb & beef, tomatoes, onions, tzatziki — wrapped in fluffy pita.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__img" src="https://images.unsplash.com/photo-1617195737497-5e0b9a9f8da1?q=80&w=1600&auto=format&fit=crop" alt="Greek salad" />
+          <div class="card__body">
+            <h3 class="card__title">Greek Salad</h3>
+            <p class="card__muted">Crisp cucumbers, tomatoes, olives & feta with oregano-olive oil dressing.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card__img" src="https://images.unsplash.com/photo-1546549039-49f0c2d2d3c9?q=80&w=1600&auto=format&fit=crop" alt="Spanakopita" />
+          <div class="card__body">
+            <h3 class="card__title">Spanakopita</h3>
+            <p class="card__muted">Flaky phyllo pastry filled with spinach, herbs, and creamy feta.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--sand)">
+    <div class="container">
+      <div class="grid grid-2">
+        <div>
+          <h2>Catering that Feels Personal</h2>
+          <p class="card__muted">Weddings, corporate lunches, backyard parties — we craft menus that match your event and budget.</p>
+          <p class="helper">Family-owned • Fresh ingredients • Vegetarian & gluten-friendly options</p>
+          <a class="btn olive" href="catering.html">Get a Quote</a>
+        </div>
+        <div class="card">
+          <img class="card__img" src="https://images.unsplash.com/photo-1555244162-803834f70033?q=80&w=1600&auto=format&fit=crop" alt="Catering dishes on table">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+    <div>© <span id="year"></span> Teo’s Catering</div>
+    <div><a href="mailto:hello@teoscatering.example">hello@teoscatering.example</a> · Moncton, NB</div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Catering — Teo’s Catering</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <a class="brand" href="index.html"><div class="brand__logo">Τ</div><div class="brand__name">Teo’s Catering</div></a>
+    <button class="nav__toggle" aria-label="Open menu">☰</button>
+    <nav class="nav__links" aria-label="Primary">
+      <a class="nav__link" href="index.html">Home</a>
+      <a class="nav__link" href="menu.html">Menu</a>
+      <a class="nav__link" href="catering.html">Catering</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container hero" style="background-image: linear-gradient(180deg, rgba(255,255,255,.92), rgba(255,255,255,.75)), url('https://images.unsplash.com/photo-1551218808-94e220e084d2?q=80&w=1600&auto=format&fit=crop')">
+      <h1>Catering Services</h1>
+      <p>From intimate gatherings to big celebrations, we’ll tailor a Mediterranean menu to your taste, budget, and venue.</p>
+      <a class="btn primary" href="#quote">Request a Quote</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container grid grid-3">
+      <article class="card">
+        <img class="card__img" src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?q=80&w=1600&auto=format&fit=crop" alt="Wedding table">
+        <div class="card__body">
+          <h3 class="card__title">Weddings</h3>
+          <p class="card__muted">Elegant buffet or plated menus, late-night bites, and dessert tables.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card__img" src="https://images.unsplash.com/photo-1531058020387-3be344556be6?q=80&w=1600&auto=format&fit=crop" alt="Corporate lunch">
+        <div class="card__body">
+          <h3 class="card__title">Corporate</h3>
+          <p class="card__muted">Team lunches, client events, and conferences with reliable timing.</p>
+        </div>
+      </article>
+      <article class="card">
+        <img class="card__img" src="https://images.unsplash.com/photo-1525253013412-55c1a69a5738?q=80&w=1600&auto=format&fit=crop" alt="Garden party">
+        <div class="card__body">
+          <h3 class="card__title">Private Parties</h3>
+          <p class="card__muted">Birthdays, showers, graduations, or backyard feasts.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="quote">
+    <div class="container">
+      <h2 style="margin:0 0 12px">Get a Catering Quote</h2>
+      <p class="helper" style="margin:0 0 18px">Share a few details and we’ll reply with availability and pricing.</p>
+
+      <div class="quote">
+        <form id="quote-form" class="form" novalidate>
+          <div class="row">
+            <div>
+              <label class="label" for="name">Full Name *</label>
+              <input class="input" id="name" name="name" autocomplete="name" required />
+            </div>
+            <div>
+              <label class="label" for="email">Email *</label>
+              <input class="input" id="email" name="email" type="email" autocomplete="email" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label class="label" for="phone">Phone</label>
+              <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" />
+            </div>
+            <div>
+              <label class="label" for="date">Event Date *</label>
+              <input class="input" id="date" name="date" type="date" required />
+            </div>
+          </div>
+
+          <div class="row">
+            <div>
+              <label class="label" for="guests">Guest Count *</label>
+              <input class="input" id="guests" name="guests" type="number" min="1" placeholder="e.g., 75" required />
+            </div>
+            <div>
+              <label class="label" for="event">Event Type *</label>
+              <select class="select" id="event" name="event" required>
+                <option value="">Select…</option>
+                <option>Wedding</option>
+                <option>Corporate</option>
+                <option>Private Party</option>
+                <option>Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="label" for="notes">Menu Preferences / Notes</label>
+            <textarea class="textarea" id="notes" name="notes" placeholder="Dietary needs, sample dishes, venue address…"></textarea>
+          </div>
+
+          <div class="helper">* Required fields. This demo does not send emails—submitting will show a success message.</div>
+          <button class="btn olive" type="submit">Submit Request</button>
+          <div class="success" role="status">Thanks! Your request has been received. We’ll be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© <span id="year"></span> Teo’s Catering · hello@teoscatering.example</div>
+</footer>
+
+<script src="app.js"></script>
+<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+</body>
+</html>
