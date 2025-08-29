@@ -50,3 +50,15 @@ if (form) {
     window.scrollTo({top:0, behavior:'smooth'});
   });
 }
+
+/* Smooth scroll to the quote section */
+const quoteButton = document.querySelector('a[href="#quote"]');
+if (quoteButton) {
+  quoteButton.addEventListener('click', (e) => {
+    e.preventDefault(); // Prevent default anchor behavior
+    const target = document.querySelector('#quote');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+}
