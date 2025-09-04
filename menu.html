@@ -31,35 +31,64 @@
 
     <div class="menu__tabs" role="tablist">
       <button class="tab is-active" data-tab="all" role="tab">All</button>
-      <button class="tab" data-tab="gyros" role="tab">Gyros</button>
-      <button class="tab" data-tab="wraps" role="tab">Wraps</button>
+      <button class="tab" data-tab="appetizers" role="tab">Appetizers</button>
+      <button class="tab" data-tab="mains" role="tab">Mains</button>
       <button class="tab" data-tab="salads" role="tab">Salads</button>
       <button class="tab" data-tab="sides" role="tab">Sides</button>
-      <button class="tab" data-tab="desserts" role="tab">Desserts</button>
-      <button class="tab" data-tab="drinks" role="tab">Drinks</button>
+      <button class="tab" data-tab="combo" role="tab">Combo</button>
     </div>
 
     <div class="menu__list">
-      <!-- Gyros -->
-      <article class="menu-item" data-item="gyros">
-        <img src="Sources/Chicken_Souvlaki.jpg" alt="Signature Gyro">
+      <!-- Appetizers -->
+      <article class="menu-item" data-item="appetizers">
+        <img src="https://images.unsplash.com/photo-1604909052743-88b9b8a9b735?q=80&w=1000&auto=format&fit=crop" alt="Fried Calamari">
         <div>
-          <h4>Signature Gyro</h4>
-          <p>Roasted lamb & beef, tomatoes, onions, tzatziki in warm pita.</p>
+          <h4>Fried Calamari</h4>
+          <p>Squid rings, tartar sauce</p>
         </div>
-        <div class="price">$10.99</div>
+        <div class="price">$9.99</div>
+      </article>
+      <article class="menu-item" data-item="appetizers">
+        <img src="https://images.unsplash.com/photo-1514514786976-0e7697d3e2b2?q=80&w=1000&auto=format&fit=crop" alt="Hummus">
+        <div>
+          <h4>Hummus</h4>
+          <p>Chickpeas, tahini, lemon juice, garlic</p>
+        </div>
+        <div class="price">$5.99</div>
+      </article>
+      <article class="menu-item" data-item="appetizers">
+        <img src="https://images.unsplash.com/photo-1604909052743-88b9b8a9b735?q=80&w=1000&auto=format&fit=crop" alt="Eggplant Dip">
+        <div>
+          <h4>Eggplant Dip</h4>
+          <p>Roasted eggplant, tahini, garlic, olive oil</p>
+        </div>
+        <div class="price">$6.99</div>
+      </article>
+      <article class="menu-item" data-item="appetizers">
+        <img src="Sources/Turkish_Borek.jpg" alt="Turkish Börek">
+        <div>
+          <h4>Turkish Börek</h4>
+          <p>Phyllo dough, cottage cheese, herbs</p>
+        </div>
+        <div class="price">$9.99</div>
       </article>
 
-      
-
-      <!-- Wraps -->
-      <article class="menu-item" data-item="wraps">
-        <img src="https://images.unsplash.com/photo-1625944528073-6a3d25bf3a0f?q=80&w=1000&auto=format&fit=crop" alt="Falafel Wrap">
+      <!-- Mains -->
+      <article class="menu-item" data-item="mains">
+        <img src="Sources/Chicken_Souvlaki.jpg" alt="Gyro">
         <div>
-          <h4>Falafel Wrap</h4>
-          <p>Crispy falafel, lettuce, tomato, cucumber, tahini.</p>
+          <h4>Gyro (Sandwich/Wrap)</h4>
+          <p>Beef, tzatziki sauce, pickled onions, fresh veggies</p>
         </div>
-        <div class="price">$8.99</div>
+        <div class="price">$13.99</div>
+      </article>
+      <article class="menu-item" data-item="mains">
+        <img src="Sources/Chicken_Souvlaki.jpg" alt="Souvlaki">
+        <div>
+          <h4>Souvlaki (Sandwich/Wrap)</h4>
+          <p>Chicken, tzatziki sauce, pickled onions, fresh veggies</p>
+        </div>
+        <div class="price">$13.99</div>
       </article>
 
       <!-- Salads -->
@@ -67,78 +96,30 @@
         <img src="Sources/Greek_Salad.jpg" alt="Greek Salad">
         <div>
           <h4>Greek Salad</h4>
-          <p>Cucumbers, tomatoes, peppers, olives, feta, oregano dressing.</p>
+          <p>Tomatoes, cucumbers, red onions, peppers, olives, feta, olive oil, lemon juice</p>
+        </div>
+        <div class="price">$8.99</div>
+      </article>
+
+      <!-- Sides -->
+      <article class="menu-item" data-item="sides">
+        <img src="https://images.unsplash.com/photo-1563245378-5a6a6aefbcb5?q=80&w=1000&auto=format&fit=crop" alt="Fresh Cut Fries">
+        <div>
+          <h4>Fresh Cut Fries</h4>
+          <p>Golden fries made from fresh potatoes</p>
         </div>
         <div class="price">$6.99</div>
       </article>
 
-
-      <!-- Sides -->
-      <article class="menu-item" data-item="sides">
-        <img src="Sources/Turkish_Borek.jpg" alt="Turkish Borek">
+      <!-- Combo -->
+      <article class="menu-item" data-item="combo">
+        <img src="https://images.unsplash.com/photo-1604909052743-88b9b8a9b735?q=80&w=1000&auto=format&fit=crop" alt="Combo">
         <div>
-          <h4>Turkish Borek</h4>
-          <p>Flaky pastry filled with spiced potatoes, herbs, and creamy feta.</p>
+          <h4>Combo</h4>
+          <p>Sandwich/Wrap + One Side + One Appetizer</p>
         </div>
-        <div class="price">$5.99</div>
+        <div class="price">$26.99</div>
       </article>
-
-      <!-- Desserts -->
-      <article class="menu-item" data-item="desserts">
-        <img src="https://images.unsplash.com/photo-1625944307317-60f8b9b6b0d2?q=80&w=1000&auto=format&fit=crop" alt="Baklava">
-        <div>
-          <h4>Baklava</h4>
-          <p>Honey-soaked phyllo with walnuts & cinnamon.</p>
-        </div>
-        <div class="price">$4.49</div>
-      </article>
-
-      <!-- Drinks -->
-      <article class="menu-item" data-item="drinks">
-        <img src="https://www.coca-cola.com/content/dam/onexp/us/en/brands/coca-cola-original/en_coca-cola-original-taste-20-oz_750x750_v1.jpg" alt="Coca Cola">
-        <div>
-          <h4>Coca Cola</h4>
-          <p>Classic cola beverage.</p>
-        </div>
-        <div class="price">$2.49</div>
-      </article>
-
-      <article class="menu-item" data-item="drinks">
-        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1000&auto=format&fit=crop" alt="Iced Tea">
-        <div>
-          <h4>Mint Iced Tea</h4>
-          <p>Refreshing brewed tea with fresh mint.</p>
-        </div>
-        <div class="price">$2.49</div>
-      </article>
-
-      <article class="menu-item" data-item="drinks">
-        <img src="https://images.unsplash.com/photo-1563245378-5a6a6aefbcb5?q=80&w=1000&auto=format&fit=crop" alt="Water">
-        <div>
-          <h4>Water</h4>
-          <p>Pure and refreshing bottled water.</p>
-        </div>
-        <div class="price">$1.49</div>
-      </article>
-
-      <article class="menu-item" data-item="drinks">
-        <img src="https://images.unsplash.com/photo-1617195737497-5e0b9a9f8da1?q=80&w=1000&auto=format&fit=crop" alt="Ginger Ale">
-        <div>
-          <h4>Ginger Ale</h4>
-          <p>Crisp and bubbly ginger-flavored soda.</p>
-        </div>
-        <div class="price">$2.49</div>
-      </article>
-
-      <article class="menu-item" data-item="drinks">
-        <img src="https://images.unsplash.com/photo-1580910051070-7c7b3b6b6b6b?q=80&w=1000&auto=format&fit=crop" alt="Fanta">
-        <div>
-          <h4>Fanta</h4>
-          <p>Fruity and fizzy orange soda.</p>
-        </div>
-        <div class="price">$2.49</div>
-      </article>
-
     </div>
 </main>
 
