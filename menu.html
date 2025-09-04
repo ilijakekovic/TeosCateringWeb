@@ -9,7 +9,12 @@
 <body>
 <header class="header">
   <div class="container nav">
-    <a class="brand" href="index.html"><div class="brand__logo">Τ</div><div class="brand__name">Teo’s Catering</div></a>
+    <a class="brand" href="index.html" aria-label="Teo's Catering home">
+      <div class="brand__logo-wrapper">
+        <img class="brand__logo" src="Sources/TeosNoBckg.png" alt="Teo's Catering logo" />
+      </div>
+      <div class="brand__name">Teo’s Catering</div>
+    </a>
     <button class="nav__toggle" aria-label="Open menu">☰</button>
     <nav class="nav__links" aria-label="Primary">
       <a class="nav__link" href="index.html">Home</a>
@@ -90,6 +95,15 @@
 
       <!-- Drinks -->
       <article class="menu-item" data-item="drinks">
+        <img src="https://www.coca-cola.com/content/dam/onexp/us/en/brands/coca-cola-original/en_coca-cola-original-taste-20-oz_750x750_v1.jpg" alt="Coca Cola">
+        <div>
+          <h4>Coca Cola</h4>
+          <p>Classic cola beverage.</p>
+        </div>
+        <div class="price">$2.49</div>
+      </article>
+
+      <article class="menu-item" data-item="drinks">
         <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?q=80&w=1000&auto=format&fit=crop" alt="Iced Tea">
         <div>
           <h4>Mint Iced Tea</h4>
@@ -97,11 +111,30 @@
         </div>
         <div class="price">$2.49</div>
       </article>
+
       <article class="menu-item" data-item="drinks">
-        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?q=80&w=1000&auto=format&fit=crop" alt="Lemonade">
+        <img src="https://images.unsplash.com/photo-1563245378-5a6a6aefbcb5?q=80&w=1000&auto=format&fit=crop" alt="Water">
         <div>
-          <h4>Coca Cola</h4>
-          <p>Classic cola beverage.</p>
+          <h4>Water</h4>
+          <p>Pure and refreshing bottled water.</p>
+        </div>
+        <div class="price">$1.49</div>
+      </article>
+
+      <article class="menu-item" data-item="drinks">
+        <img src="https://images.unsplash.com/photo-1617195737497-5e0b9a9f8da1?q=80&w=1000&auto=format&fit=crop" alt="Ginger Ale">
+        <div>
+          <h4>Ginger Ale</h4>
+          <p>Crisp and bubbly ginger-flavored soda.</p>
+        </div>
+        <div class="price">$2.49</div>
+      </article>
+
+      <article class="menu-item" data-item="drinks">
+        <img src="https://images.unsplash.com/photo-1580910051070-7c7b3b6b6b6b?q=80&w=1000&auto=format&fit=crop" alt="Fanta">
+        <div>
+          <h4>Fanta</h4>
+          <p>Fruity and fizzy orange soda.</p>
         </div>
         <div class="price">$2.49</div>
       </article>
