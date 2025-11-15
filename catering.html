@@ -65,7 +65,7 @@
       <p class="helper" style="margin:0 0 18px">Share a few details and we’ll reply with availability and pricing.</p>
 
       <div class="quote">
-        <form id="quote-form" class="form" novalidate>
+        <form action="https://formspree.io/f/xldwzqnv" method="POST">
           <div class="row">
             <div>
               <label class="label" for="name">Full Name *</label>
@@ -110,9 +110,10 @@
             <textarea class="textarea" id="notes" name="notes" placeholder="Dietary needs, sample dishes, venue address…"></textarea>
           </div>
 
-          <div class="helper">* Required fields. This demo does not send emails—submitting will show a success message.</div>
+          <div class="helper">* Required fields.</div>
           <button class="btn olive" type="submit">Submit Request</button>
-          <div class="success" role="status">Thanks! Your request has been received. We’ll be in touch soon.</div>
+          <div class="success" role="status" style="display:none;">Thanks! Your request has been received. We’ll be in touch soon.</div>
+          <div class="error" role="alert" style="display:none;">Sorry, something went wrong. Please try again in a moment.</div>
         </form>
       </div>
     </div>
