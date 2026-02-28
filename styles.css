@@ -146,6 +146,19 @@ body{
 }
 .error{color:#b00020; font-size:.9rem; display:none}
 
+/* ---------- PRIVACY ---------- */
+.policy-layout{
+  display:grid;
+  gap:16px;
+  max-width:900px;
+  margin:auto;
+}
+.policy-card .card__body{padding:20px}
+.policy-card h2{margin:0 0 10px; font-size:1.2rem}
+.policy-list{margin:0; padding-left:1.1rem; color:var(--muted)}
+.policy-list li + li{margin-top:6px}
+.policy-link{color:var(--olive); font-weight:600}
+
 /* ---------- FOOTER ---------- */
 .footer{
   margin-top: 60px;
