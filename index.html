@@ -40,7 +40,7 @@
       <a class="nav__link" href="menu.html">Menu</a>
       <a class="nav__link" href="catering.html">Catering</a>
       <a class="nav__link" href="https://www.teoscateringform.com/">Promotions</a>
-      <a class="nav__link" href="privacy.html">Privacy Policy</a>
+      <a class="nav__link" href="contactus.html">Contact Us</a>
     </nav>
   </div>
 </header>
@@ -104,17 +104,22 @@
   </section>
 </main>
 
+
 <footer class="footer">
   <div class="container" style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
     <div>© <span id="year"></span> Teo’s Catering</div>
-    <a href="privacy.html" style="color:#4CAF50;">Privacy Policy</a> | 
-    <a href="#" id="withdrawConsent" style="color:#4CAF50;">Withdraw Cookie Consent</a>
-    <!-- <div><a href="mailto:hello@teoscatering.example">hello@teoscatering.example</a> · Moncton, NB</div> -->
+    <div style="display:flex; gap:12px; flex-wrap:wrap;">
+      <a href="privacy.html" style="color:#4CAF50;">Privacy Policy</a>
+      <a href="privacy.html" style="color:#4CAF50;">Terms of Use</a>
+      <a href="#" id="withdrawConsent" style="color:#4CAF50;">Withdraw Cookie Consent</a>
+    </div>
   </div>
 </footer>
 
 <script src="app.js"></script>
-<script>document.getElementById('year').textContent=new Date().getFullYear()</script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 
 <!-- Cookie Consent Banner -->
 <div id="cookieBanner" style="
@@ -133,33 +138,34 @@ font-family:Arial, sans-serif;
 box-shadow:0 -2px 10px rgba(0,0,0,0.3);
 flex-wrap:wrap;
 ">
+  <span style="max-width:70%;">
+    Teo’s Catering uses cookies and tracking technologies for analytics and advertising purposes.
+    By clicking Accept, you agree to our
+    <a href="privacy.html" style="color:#4CAF50;">Privacy Policy</a>
+    and
+    <a href="privacy.html" style="color:#4CAF50;">Terms of Use</a>.
+  </span>
 
-    <span style="max-width:70%;">
-        Teo’s Catering uses cookies and tracking technologies for analytics and advertising purposes. 
-        By clicking Accept, you agree to our 
-        <a href="/privacy.html" style="color:#4CAF50;">Privacy Policy</a>.
-    </span>
+  <div>
+    <button id="acceptCookies" style="
+      background:#28a745;
+      border:none;
+      color:white;
+      padding:10px 15px;
+      margin-right:10px;
+      cursor:pointer;
+      border-radius:4px;
+    ">Accept</button>
 
-    <div>
-        <button id="acceptCookies" style="
-            background:#28a745;
-            border:none;
-            color:white;
-            padding:10px 15px;
-            margin-right:10px;
-            cursor:pointer;
-            border-radius:4px;
-        ">Accept</button>
-
-        <button id="declineCookies" style="
-            background:#555;
-            border:none;
-            color:white;
-            padding:10px 15px;
-            cursor:pointer;
-            border-radius:4px;
-        ">Decline</button>
-    </div>
+    <button id="declineCookies" style="
+      background:#555;
+      border:none;
+      color:white;
+      padding:10px 15px;
+      cursor:pointer;
+      border-radius:4px;
+    ">Decline</button>
+  </div>
 </div>
 
 <script>
@@ -178,7 +184,6 @@ function loadMetaPixel() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-
     const banner = document.getElementById("cookieBanner");
     const consent = localStorage.getItem("cookieConsent");
 
@@ -200,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function() {
     };
 });
 </script>
+
 <script>
 document.getElementById("withdrawConsent").addEventListener("click", function(e) {
     e.preventDefault();
@@ -208,6 +214,5 @@ document.getElementById("withdrawConsent").addEventListener("click", function(e)
     location.reload();
 });
 </script>
-
 </body>
 </html>
