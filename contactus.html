@@ -21,7 +21,7 @@
       <a class="nav__link" href="menu.html">Menu</a>
       <a class="nav__link" href="catering.html">Catering</a>
       <a class="nav__link" href="https://www.teoscateringform.com/" target="_blank" rel="noopener noreferrer">Promotions</a>
-      <a class="nav__link" href="https://www.teoscateringform.com/" target="_blank" rel="noopener noreferrer">Contact Us</a>
+      <a class="nav__link" href="contactus.html">Contact Us</a>
     </nav>
   </div>
 </header>
@@ -36,59 +36,14 @@
 
   <section class="section" id="contact">
     <div class="container">
-      <div class="quote">
-        <form action="https://formspree.io/f/xdawrdbw" method="POST">
-          <div class="row">
-            <div>
-              <label class="label" for="firstName">First Name *</label>
-              <input class="input" id="firstName" name="firstName" autocomplete="given-name" required />
-            </div>
-            <div>
-              <label class="label" for="lastName">Last Name *</label>
-              <input class="input" id="lastName" name="lastName" autocomplete="family-name" required />
-            </div>
-          </div>
-
-          <div class="row">
-            <div>
-              <label class="label" for="email">Email Address *</label>
-              <input class="input" id="email" name="_replyto" type="email" autocomplete="email" required />
-            </div>
-
-          <div class="row">
-            <div>
-              <label class="label" for="phone">Phone Number *</label>
-              <input class="input" id="phone" name="phone" type="tel" autocomplete="tel" required />
-            </div>
-          </div>
-
-          <div>
-            <label class="label" for="message">Your Message *</label>
-            <textarea class="textarea" id="message" name="message" placeholder="Tell us what's on your mind…" required></textarea>
-          </div>
-
-          <div style="margin-top: 20px; display: flex; flex-direction: column; gap: 14px;">
-            <label style="display: flex; gap: 10px; align-items: flex-start; cursor: pointer;">
-              <input type="checkbox" id="marketingConsent" name="marketingConsent" style="margin-top: 4px;" />
-              <span class="helper" style="margin: 0; line-height: 1.6;">
-                I consent to receive marketing text messages about special offers, discounts, and service updates from Teo's Catering at the phone number provided. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
-              </span>
-            </label>
-
-            <label style="display: flex; gap: 10px; align-items: flex-start; cursor: pointer;">
-              <input type="checkbox" id="serviceConsent" name="serviceConsent" style="margin-top: 4px;" />
-              <span class="helper" style="margin: 0; line-height: 1.6;">
-                I consent to receive non-marketing text messages from Teo's Catering to send service-related notifications and updates. Messages may include account updates, service alerts, and support-related communications. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
-              </span>
-            </label>
-          </div>
-
-          <div class="helper" style="margin-top: 16px;">* Required fields.</div>
-          <button class="btn olive" type="submit" style="margin-top: 16px;">Send Message</button>
-          <div class="success" role="status" style="display:none;">Thanks for reaching out! We'll reply as soon as possible.</div>
-          <div class="error" role="alert" style="display:none;">Sorry, something went wrong. Please try again in a moment.</div>
-        </form>
-      </div>
+      <iframe
+        src="https://www.teoscateringform.com/"
+        title="Contact Us Form"
+        aria-label="Contact Us Form"
+        style="width:100%; min-height:750px; border:none; display:block;"
+        loading="lazy"
+        sandbox="allow-forms allow-scripts allow-same-origin allow-popups"
+      ></iframe>
     </div>
   </section>
 </main>
